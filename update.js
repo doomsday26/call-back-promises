@@ -44,7 +44,7 @@ async function  createPost(post){
     const updateLastUserActivityTime= new Promise((resolve, reject) => {
         setTimeout(()=>{console.log( JSON.stringify(posts) + "updated on" + Date.now());resolve()},1000)
     })
-    await Promise.all([create,updateLastUserActivityTime]);
+    await Promise.all([create,updateLastUserActivityTime]); 
 }
 
 
